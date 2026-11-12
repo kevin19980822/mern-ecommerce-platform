@@ -1,0 +1,1 @@
+import {Router} from "express";import {auth} from "../middleware/auth";import {Order} from "../models/Order";const r=Router();r.get("/",auth,async(req,res,next)=>{try{res.json({orders:await Order.find({user:req.user!.id}).sort({createdAt:-1})});}catch(e){next(e);}});export default r;
