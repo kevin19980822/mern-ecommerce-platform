@@ -9,7 +9,7 @@ React + TypeScript + Vite; Express + TypeScript; MongoDB/Mongoose; JWT; Zod; Str
 1. Install Node.js 20+ and MongoDB.
 2. Copy `.env.example` to `.env`; use a JWT secret of 32+ characters.
 3. Run `npm install`.
-4. Run `npm run dev`.
+4. Run `npm run seed` to insert six sample products (safe to re-run; existing SKUs are kept).\n5. Run `npm run dev`.
 5. Open http://localhost:5174 (API http://localhost:4001).
 
 ## Stripe test checkout
